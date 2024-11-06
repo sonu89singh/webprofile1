@@ -10,6 +10,7 @@ let about1=document.querySelector('.about');
 let resume=document.querySelector('.resume');
 let blog=document.querySelector('.blog');
 let portfiolio=document.querySelector('.portfolio');
+let contact=document.querySelector('.contact');
 
 
 
@@ -40,6 +41,7 @@ function home() {
         resume.classList.remove('active')
         portfiolio.classList.remove('active')
         about1.classList.remove('active')
+        contact.classList.remove('active')
     }activer();
     nav.classList.toggle('nav1')
     mian.classList.remove('mian')
@@ -62,6 +64,7 @@ let about=()=>{
         blog.classList.remove('active')
         resume.classList.remove('active')
         portfiolio.classList.remove('active')
+        contact.classList.remove('active')
     }activer();   
     function fa() {
         btn.classList.add('fa-bar')
@@ -87,6 +90,7 @@ let resume1=()=>{
         blog.classList.remove('active')
         about1.classList.remove('active')
         portfiolio.classList.remove('active')
+        contact.classList.remove('active')
     }activer();   
     function fa() {
         btn.classList.add('fa-bar')
@@ -111,6 +115,7 @@ let portfolio1=()=>{
         blog.classList.remove('active')
         about1.classList.remove('active')
         resume.classList.remove('active')
+        contact.classList.remove('active')
     }activer();   
     function fa() {
         btn.classList.add('fa-bar')
@@ -135,6 +140,8 @@ let blog1=()=>{
         portfiolio.classList.remove('active')
         about1.classList.remove('active')
         resume.classList.remove('active')
+        contact.classList.remove('active')
+
     }activer();   
     function fa() {
         btn.classList.add('fa-bar')
@@ -154,7 +161,31 @@ let blog1=()=>{
     body.classList.toggle('overflow')
 }
 
-
+function contact1() {
+    function activer() {
+        container1.classList.remove('active')
+        portfiolio.classList.remove('active')
+        about1.classList.remove('active')
+        resume.classList.remove('active')
+        blog.classList.remove('active')
+    }activer();   
+    function fa() {
+        btn.classList.add('fa-bar')
+        btn.classList.remove('fa-xmark')
+    }fa();
+    nav.classList.toggle('nav1')
+    selector.forEach((select)=>{
+        select.classList.add('hide')
+        
+    })
+    mian.classList.remove('mian')
+    contact.classList.add('active')
+    
+    fiximg.forEach((img)=>{
+        img.classList.remove("width")
+    })
+    body.classList.toggle('overflow')
+}
 
 let images=document.querySelectorAll('#imagef div');
 const imaage=Array.from(images);
@@ -194,4 +225,19 @@ let graphic=()=>{
    }).map((val)=>{
       val.classList.add('none')
    })
+}
+
+
+
+
+
+function erage() {
+    let inp=document.querySelectorAll('.inpfield input')
+    inp.forEach(
+        (i)=>{
+            console.log(i.value)
+            let noe='';
+            i.value=noe;
+        }
+    )
 }

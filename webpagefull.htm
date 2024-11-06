@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <style>
@@ -19,7 +20,9 @@
         padding: 130px 100px;
         filter: blur(1px);
     }
-
+    .contact{
+        display: none;
+    }
     .pattern1 {
         /* width: 80%; */
         top: 220px;
@@ -109,16 +112,18 @@
             gap: 20px;
             flex-wrap: wrap;
         }
-
+        .lowtxt span::after{
+            font-size: 45px;
+            top: 75px;
+            letter-spacing: 10px;
+        }
         /* .info {
             /* margin-top: 10px;
             flex-wrap: wrap;
             justify-items: center;
             align-items: center;
             text-align: center; */
-        } */
-
-        .inforow {
+            .inforow {
             justify-content: center;
             align-items: center;
         }
@@ -130,6 +135,9 @@
         .offerbox {
             flex-wrap: wrap;
         }
+        } 
+
+      
 
     @media screen and (max-width:1100px) {
 
@@ -170,7 +178,7 @@
                 <li id="content3" class="div" onclick="resume1()">RESUME</li>
                 <li id="content4" class="div" onclick="portfolio1()">PORTFOLIO</li>
                 <li id="content5" class="div" onclick="blog1()">BLOG</li>
-                <li id="content6" class="div">CONTACT</li>
+                <li id="content6" class="div" onclick="contact1()">CONTACT</li>
             </ul>
         </div>
     </nav>
@@ -482,7 +490,7 @@
         <div id="" class="selectorall portfolio">
             <div class="portfoliochild cont">
                 <div class="top-portfolio">
-                    <h5 class="portfoliotxt">
+                    <h5 class="portfoliotxt lowtxt">
                         <span>ORTFOLIO</span>
                     </h5>
                 </div>
@@ -570,8 +578,77 @@
             </div>
             <div class="blogimg imagefixed"></div>
         </div>
+        <!-- BLOG YAHA END HO RAHA HAI -->
+<!-- 
+        yaha se contat start hai -->
+
+        <div class="contact selectorall">
+            <div class="contact-content cont">
+                <div class="top-contact">
+                    <h5 class="contacttxt lowtxt">
+                        <span>ONTACT ME</span>
+                    </h5>
+                </div>
+                
+                <div class="what" id="experience-child1">
+                    <span>
+                        <h2 class="whath2">CONTACT <b>INFO</b></h2>
+                    </span>
+                    <span class="dot"></span>
+                </div>
+                <div class="contactinfo">
+                <div class="contact-m">
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <span>Phone</span>
+                            <span>+91 9289150903</span>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span>Email</span>
+                            <span>sonukumarsingh110048@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Address</span>
+                            <span>Zamrudpur, GK-1, NDL </span>
+                        </div>
+                    </div>
+                    <div class="freelancer">
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <span>Freelancer</span>
+                            <span>Avialable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="what" id="experience-child1">
+                <span>
+                    <h2 class="whath2">GET <b>IN</b> TOUCH</h2>
+                </span>
+                <span class="dot"></span>
+            </div>
+            <div class="inpfield">
+                <div>
+                <input type="text" placeholder="Name" class="name">
+                <input type="text"  placeholder="Email" class="email">
+            </div>
+            <input type="text" placeholder="Subject" class="subject">
+            <input type="text" placeholder="Message" class="message">
+            <button class="butn " onclick="erage()">SEND MESSAGE</button>
+            </div>
+            </div>
+            <div class="contactimg imagefixed"></div>
+        </div>
     </main>
-    <!-- BLOG YAHA END HO RAHA HAI -->
+
+
     <script src="script.js"></script>
 </body>
 
