@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   outline: none;
+   list-style: none;
+   word-wrap: break-word;
+   font-family: "Dosis", sans-serif;
+}
+
+.blog {
+   display: flex;
+   height: 100vh;
+   /* width: 100vw; */
+}
+
+.blog-content {
+   height: fit-content;
+   min-height: 100%;
+   width: 60%;
+   background-color: #000000;
+   color: white;
+   font-family: "Dosis", sans-serif;
+   padding: 60px 40px;
+   position: relative;
+   min-width: 60vw;
+}
+
+.blogimg {
+   position: fixed;
+   width: 40%;
+   top: 0;
+   right: 0;
+   z-index: 1;
+   background-image: url(img/4\ \(2\).jpg);
+   background-repeat: no-repeat;
+
+
+   height: 100vh;
+
+   width: 40vw;
+   background-size: cover;
+   background-position: center center;
+}
+
+.blogtxt span {
+   font-weight: 800;
+   letter-spacing: 2PX;
+}
+
+.blogtxt span::before {
+   content: 'B';
+   background-color: #343a40;
+   color: #d0bb79;
+   font-size: 50px;
+   font-weight: 800;
+   margin-right: 5px;
+   padding: 0 5px;
+}
+
+.blogtxt span::after {
+   content: 'BLOG';
+   letter-spacing: 30px;
+   color: #aaaaaa;
+   font-size: 80px;
+   font-weight: 800;
+   margin-right: 5px;
+   padding: 0 5px;
+   opacity: .1;
+   z-index: 1;
+   position: absolute;
+   top: 40PX;
+   left: 85PX;
+   text-align: left;
+}
+
+.top-blog {
+   margin-bottom: 50px;
+}
+
+.blog-first {
+   width: 100%;
+ margin-bottom:17em;
+   height: fit-content;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.blog-firstimg {
+   background-image: url(img/1.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   width: 700px;
+   height: 460px;
+   /* height: auto; */
+   /* position: relative; */
+   z-index: 0;
+   position: relative;
+}
+.blog-firstimg .date{
+  border-radius: 5px;
+   background-color: #d0bb79;
+   padding: 10px;
+   color: white;
+   position: absolute;
+ right: 30px;
+   top: 30px;
+   height:65px;
+   width:72px;
+   font-weight: 500;
+ 
+   text-align: center;
+}
+.blogcon {
+   width: 90%;
+   height: fit-content;
+   position: absolute;
+   top: 100%;
+   background-color: #12141C;
+   text-decoration: none;
+   /* position: absolute; */
+   margin: -30px;
+   /* top: 32.5em; */
+   padding: 40px 20px ;
+   margin-bottom: 40px;
+}
+.blogcon a{
+color: #12141C;
+background-color: #d0bb79;
+padding: 5px 10px;
+font-weight: 700;
+text-decoration: none;
+margin-bottom: 10px;
+
+}
+.blogcon h4{
+color: white;
+font-weight: 300;
+font-size: 30px;
+margin:10px 0px;
+letter-spacing: 2px;
+}
+.blogcon p{
+color: #5e5e5e;
+}
+.blogcon button{
+color: #d0bb79;
+text-decoration: underline;
+text-decoration-color: #5e5e5e;
+background: none;
+border: none;
+margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+/* Responsive Mode Start Here */
+
+@media screen and (max-width:800px) {
+   .lowtxt span::after{
+      font-size: 45px;
+      letter-spacing: 10px;
+      top: 75px;
+   }
+   .blog-firstimg {
+      background-image: url(img/1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      max-width:  90vw;
+      height: 360px;
+      /* height: auto; */
+      /* position: relative; */
+      z-index: 0;
+      position: relative;
+      margin-top: 40px;
+   }
+   .blogcon {
+      width: 95%;
+      height: fit-content;
+      position: absolute;
+      top: 100%;
+      background-color: #12141C;
+      text-decoration: none;
+      /* position: absolute; */
+      margin: -30px;
+      /* top: 32.5em; */
+      padding: 40px 20px ;
+      margin-bottom: 40px;
+   }
+}
+@media screen and (max-width:550px) {
+   .blog-firstimg {
+      background-image: url(img/1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 90vw;
+      height: 260px;
+      /* height: auto; */
+      /* position: relative; */
+      z-index: 0;
+      position: relative;
+      margin-top: 130px;
+   }
+   .blogcon {
+      width: 95%;
+      height: fit-content;
+      position: absolute;
+      top: 100%;
+      background-color: #12141C;
+      text-decoration: none;
+      /* position: absolute; */
+      margin: -30px;
+      /* top: 32.5em; */
+      padding: 40px 20px ;
+      margin-bottom: 70px;
+   }
+}

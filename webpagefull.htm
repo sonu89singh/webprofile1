@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    .mian {
+        position: relative;
+        padding: 130px 100px;
+        filter: blur(1px);
+    }
+
+    .pattern1 {
+        /* width: 80%; */
+        top: 220px;
+        /* height: 80%; */
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav2 {
+        display: none;
+    }
+
+    .nav1 {
+        display: flex;
+    }
+
+    .home {
+        display: flex;
+        width: 90%;
+        height: 100%;
+    }
+
+    .about {
+        display: none;
+        /* margin-top: 200px; */
+    }
+
+    .resume {
+        display: none;
+    }
+
+    .portfolio {
+        display: none;
+    }
+
+    .blog {
+        display: none;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .image9 {
+        width: 40vw-200px;
+    }
+
+    .selectorall {
+        overflow-y: scroll;
+    }
+
+    .overflow {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+    }
+
+    @media screen and (max-width:550px) {
+        .abouttxt span::after {
+            display: none;
+        }
+
+        #navcontent ul {
+            gap: 10px;
+            /* flex-wrap: wrap; */
+        }
+
+    }
+
+    @media screen and (max-width:850px) {
+        .imagefixed {
+            display: none;
+        }
+
+        .cont {
+            width: 100vw;
+        }
+
+        #navcontent ul {
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* .info {
+            /* margin-top: 10px;
+            flex-wrap: wrap;
+            justify-items: center;
+            align-items: center;
+            text-align: center; */
+        } */
+
+        .inforow {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fourb {
+            grid-template-columns: 1fr;
+        }
+
+        .offerbox {
+            flex-wrap: wrap;
+        }
+
+    @media screen and (max-width:1100px) {
+
+    }
+
+    @media screen and (max-width:1100px) {
+       
+
+        .date1 b {
+            color: #d0bb79;
+        }
+
+        .info {
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .imagefixed {
+            display: none;
+        }
+
+        .cont {
+            width: 100vw;
+        }
+    }
+</style>
+
+<body>
+    <button id="mainbutton" onclick="cross()"><i class="fa-solid fa-bars"></i></button>
+
+    <!-- NAV YAH SE START HAI -->
+    <nav class="nav2">
+        <div id="navlogo"></div>
+        <div id="navcontent">
+            <ul>
+                <li id="content1" class="div" onclick="home()">HOME </li>
+                <li id="content2" class="div" onclick="about()">ABOUT</li>
+                <li id="content3" class="div" onclick="resume1()">RESUME</li>
+                <li id="content4" class="div" onclick="portfolio1()">PORTFOLIO</li>
+                <li id="content5" class="div" onclick="blog1()">BLOG</li>
+                <li id="content6" class="div">CONTACT</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NAV YAHA END HAI -->
+
+    <main>
+        <!-- HOME YAHA SE START HAI -->
+        <div id="" class="selectorall flex container1 ">
+
+            <div class="boxe1">
+                <div class="pattern"> <img src="img/hero.jpg" height="100%" alt="" width="100%"></div>
+
+            </div>
+            <div id="" class="boxes2">
+                <div class="content">
+                    <div class="caption">
+                        <h6>Hey There!</h6>
+                        <h1>I'm Sonu Kumar Singh</h1>
+                        <p>I am Sonu Kumar. Impossible considered invitation him men instrument saw celebrated
+                            unpleasant. Put rest and must set kind next many near nay. He exquisite continued
+                            explained middleton am. Impossible considered invitation him men instrument saw
+                            celebrated unpleasant.</p>
+                        <div class="iconorspan">
+
+                            <span class="butn"> DOWNLOAD C.V </span>
+
+
+                            <div class="social">
+                                <a href="#0" class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#0" class="icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#0" class="icon">
+                                    <i class="fas fa-basketball-ball"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- HOME YAHA END HAI -->
+
+        <!-- ABOUT YAHA SE START HAI -->
+        <div class="container2 flex about selectorall">
+            <div class="aboutcon cont">
+                <div class="topabout">
+                    <h5 class="abouttxt lowtxt">
+                        <span>BOUT ME</span>
+                    </h5>
+                </div>
+                <div class="introf">
+                    <h5 class="intro">I am a creative <b>web developer</b> from INDIA, DELHI. I love to
+                        talk with you about our unique services.</h5>
+                </div>
+                <div class="intros">
+                    <p class="mb-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                        pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                        pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+                        pulvinar neque.</p>
+                </div>
+                <div class="download-hire">
+                    <span class="butn">DOWNLOAD C.V</span>
+                    <span class="hire">HIRE ME!</span>
+                </div>
+                <div class="info">
+                    <div class="inforow">
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <h6>PHONE</h6>
+                            <p>+91 9289150903</p>
+                        </div>
+                        <div class="email"><i class="fa-solid fa-envelope"></i>
+                            <h6>EMAIL</h6>
+                            <p>sonukumar110048@gmail.com</p>
+                        </div>
+
+                        <div class="freelancer">
+                            <i class="fa-solid fa-check"></i>
+                            <h6>FREELANCER</h6>
+                            <p>Avialable</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="what">
+                    <span>
+                        <h2 class="whath2">WHAT <b>I DO</b> ?</h2>
+                    </span>
+                    <span class="dot"></span>
+                </div>
+                <div class="fourb">
+                    <div class="fourb1 float">
+                        <i class="fa-solid fa-palette"></i>
+                        <h5>Web Design</h5>
+                        <p>Lorem ipsum consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit Maecenas
+                            in pulvinar neque.</p>
+                    </div>
+                    <div class="fourb2">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h5>Web Development</h5>
+                        <p>Lorem ipsum consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit Maecenas
+                            in pulvinar neque.</p>
+                    </div>
+                    <div class="fourb3 float">
+                        <i class="fa-solid fa-shield"></i>
+                        <h5>Branding</h5>
+                        <p>Lorem ipsum consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit Maecenas
+                            in pulvinar neque.</p>
+                    </div>
+                    <div class="fourb4">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h5>Marketing</h5>
+                        <p>Lorem ipsum consectetur adipiscing elit dolor sit amet, consectetur adipiscing elit Maecenas
+                            in pulvinar neque.</p>
+                    </div>
+                </div>
+                <div class="what offer">
+                    <span>
+                        <h2 class="whath2">MY <b>OFFERS</b></h2>
+                    </span>
+                    <span class="dot"></span>
+                </div>
+                <div class="offerbox">
+                    <div class="offerbox1">
+                        <h5>BASIC</h5>
+                        <div class="price">
+                            <div class="val">
+                                <span class="cur">$</span>
+                                <h3>10</h3>
+                                <span class="per">/ Mo</span>
+                            </div>
+                            <p>Lorem Ipsum is simply text.</p>
+                        </div>
+                    </div>
+                    <div class="offerbox2">
+                        <h5>STANDARD</h5>
+                        <div class="price">
+                            <div class="val">
+                                <span class="cur">$</span>
+                                <h3>30</h3>
+                                <span class="per">/ Year</span>
+                            </div>
+                            <p>Lorem Ipsum is simply text.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="what offer tesimonal">
+                    <span>
+                        <h2 class="whath2">TESTI<b>MONIALS</b></h2>
+                    </span>
+                    <span class="dot"></span>
+                </div>
+                <div class="slider">
+
+                </div>
+
+
+
+
+                <div class="what offer tesimonal">
+                    <span>
+                        <h2 class="whath2">FUN <b>FACT</b></h2>
+                    </span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <div class="aboutimg imagefixed">
+
+            </div>
+
+        </div>
+        <!-- ABOUT YAHA SE START HAI -->
+
+
+        <!-- RESUME YAHA SE START HAI -->
+        <div id="" class="selectorall resume">
+            <div class="resumechild cont">
+                <div class=" resumecon">
+                    <div class=" topresume">
+                        <h5 class=" resumetxt lowtxt">
+                            <span>ESUME</span>
+                        </h5>
+                    </div>
+                </div>
+                <div id="experience">
+                    <div class="what" id="experience-child1">
+                        <span>
+                            <h2 class="whath2">EXPER<b>IENCE</b></h2>
+                        </span>
+                        <span class="dot"></span>
+                    </div>
+                    <div id="experience-child1">
+                        <div class="row">
+                            <div class="date1">
+                                <span>2024 - <b>Current</b></span>
+                            </div>
+                            <div class="info">
+                                <h6>WORKING AS WEB DEVELORE</h6>
+                                <h4>Lead Ui/Ux Designer</h4>
+                                <p>All the Lorem Ipsum on the Internet tend to repeat chunks as necessary, making this
+                                    on the Internet generator.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education">
+                    <div class="what " id="education-child1">
+                        <span>
+                            <h2 class="whath2">EDUC<b>ATION</b></h2>
+                        </span>
+                        <span class="dot"></span>
+                    </div>
+                    <div id="education-child2">
+                        <div class="row">
+                            <div class="date1">
+                                <span>2022 - <b>2023</b></span>
+                            </div>
+                            <div class="info">
+                                <h6>WORKING AS WEB DEVELOREr</h6>
+                                <h4>S.B.V SADIQ NAGAR</h4>
+                                <p>All the Lorem Ipsum on the Internet tend to repeat chunks as necessary, making this
+                                    on the Internet generator.</p>
+                            </div>
+                        </div>
+                        <div class="row row1">
+                            <div class="date1">
+                                <span>2023 - <b>2025</b></span>
+                            </div>
+                            <div class="info">
+                                <h6>WORKING AS WEB DEVELOREr</h6>
+                                <h4>S.B.V SADIQ NAGAR</h4>
+                                <p>All the Lorem Ipsum on the Internet tend to repeat chunks as necessary, making this
+                                    on the Internet generator.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill">
+                    <div class="what  " id="skill-chlid1">
+                        <span>
+                            <h2 class="whath2">BEST<b>SKILL</b></h2>
+                        </span>
+                        <span class="dot"></span>
+                    </div>
+                    <div id="skill-child2">
+                        <div class="skill-item">
+                            <h5>Web Design</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="90%" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5>HTML / JQUERY</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="95%" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5>BRANDING</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="75%" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5>WORDPRESS</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="85%" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5>Development</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="85%" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h5>php / mysql</h5>
+                            <div class="skill-progress">
+
+                                <div class="progres" data-value="75%" style="width: 75%; "></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="resumeimg imagefixed"></div>
+        </div>
+
+        <!-- RESUME YAHA SE END HAI -->
+
+
+
+
+        <!-- PORTFOLIO YAHA SE START HAI  -->
+
+        <div id="" class="selectorall portfolio">
+            <div class="portfoliochild cont">
+                <div class="top-portfolio">
+                    <h5 class="portfoliotxt">
+                        <span>ORTFOLIO</span>
+                    </h5>
+                </div>
+                <div id="p-button">
+                    <button id="all" onclick="total()">ALL</button>
+                    <button id="brand" onclick="brand()">BRAND</button>
+                    <button id="design" onclick="design()"> DESIGN</button>
+                    <button id="graphic" onclick="graphic()"> GRAPHIC</button>
+
+                </div>
+                <div id="imagef">
+                    <div id="graphic"><img src="img/1 (1).jpg" alt=""></div>
+                    <div id="design"><img src="img/2 (1).jpg" alt=""></div>
+                    <div id="brand"><img src="img/3 (1).jpg" alt=""></div>
+                    <div id="graphic"><img src="img/4.jpg" alt=""></div>
+                    <div id="design"><img src="img/5.jpg" alt=""></div>
+                    <div id="brand"><img src="img/6.jpg" alt=""></div>
+                    <div id="brand"><img src="img/7.jpg" alt=""></div>
+                    <div id="graphic"><img src="img/8.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="portfolioimg imagefixed"></div>
+        </div>
+
+        <!-- PORTFOLIO YAHA END HAI -->
+
+
+        <!-- BLOG YAHA SE START HAI -->
+
+        <div id="" class="selectorall blog">
+            <div class="blog-content cont">
+                <div class="top-blog">
+                    <h5 class="blogtxt lowtxt">
+                        <span>LOG</span>
+                    </h5>
+                </div>
+                <div class="blog-first">
+                    <div class="blog-firstimg"><div class="date">06 <br> AUGUST</div></div>
+                    <div class="blogcon">
+                      <div class="con-el">
+                        <a href="#">#WordPress</a>
+                        <h4>Master These Awesome New Skills in April 2019</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        </p>
+                        <button>READ MORE</button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="blog-first">
+                    <div class="blog-firstimg" style="background-image: url(img/cycle.jpg);"><div class="date">06 <br> AUGUST</div></div>
+                    <div class="blogcon">
+                      <div class="con-el">
+                        <a href="#">#WordPress</a>
+                        <h4>International Women’s Day: Celebrating Women In Design</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        </p>
+                        <button>READ MORE</button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="blog-first">
+                    <div class="blog-firstimg" style="background-image: url(img/new2.jpg);"><div class="date">06 <br> AUGUST</div></div>
+                    <div class="blogcon">
+                      <div class="con-el">
+                        <a href="#">#WordPress</a>
+                        <h4>How Designers Are Amplifying Their Portfolios in 2019</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        </p>
+                        <button>READ MORE</button>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="blog-first">
+                    <div class="blog-firstimg"style="background-image: url(img/new3.jpg);"><div class="date">06 <br> AUGUST</div></div>
+                    <div class="blogcon">
+                      <div class="con-el">
+                        <a href="#">#WordPress</a>
+                        <h4>Master These Awesome New Skills in April 2019</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque Lorem ipsum dolor sit amet, consectetur adipiscing elit.                        </p>
+                        <button>READ MORE</button>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="blogimg imagefixed"></div>
+        </div>
+    </main>
+    <!-- BLOG YAHA END HO RAHA HAI -->
+    <script src="script.js"></script>
+</body>
+
+</html>
