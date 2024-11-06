@@ -3,7 +3,7 @@ const body=document.querySelector('body')
 let mian=document.querySelector('main')
 let selectorall=document.querySelectorAll('.selectorall')
 const nav=document.querySelector('.nav2');
-
+const fiximg=document.querySelectorAll('.imagefixed')
 
 let container1=document.querySelector('.container1');
 let about1=document.querySelector('.about');
@@ -23,18 +23,15 @@ function cross() {
      nav.classList.toggle('nav1')
     mian.classList.toggle('mian')
     box8.classList.toggle('pattern1')
-    body.classList.toggle('overflow')
-    // box8.style.top='220px';
-    
-    // selector.forEach((select)=>{
-    //     select.classList.toggle('hide')
-        
-    // })
+    fiximg.forEach((img)=>{
+        img.classList.toggle("width")
+    })
     selector.filter((select)=>{
         select.getAttribute('class')!=='active';
     }).map((select)=>{
         select.classList.toggle('hide')
     })
+    body.classList.toggle('overflow')
 }
 // body.style.overflow='scroll';
 function home() {
@@ -51,12 +48,13 @@ function home() {
         btn.classList.add('fa-bar')
         btn.classList.remove('fa-xmark')
     }fa();
-    body.style.overflow='none';
+   
     selector.forEach((select)=>{
         select.classList.add('hide')
         
     })
     container1.classList.add('active')
+    body.classList.toggle('overflow')
 }
 let about=()=>{
     function activer() {
@@ -77,7 +75,11 @@ let about=()=>{
     })
     mian.classList.remove('mian')
     about1.classList.add('active')
-    body.style.overflowY='scroll';
+    
+    fiximg.forEach((img)=>{
+        img.classList.remove("width")
+    })
+    body.classList.toggle('overflow')
 }
 let resume1=()=>{
     function activer() {
@@ -97,7 +99,11 @@ let resume1=()=>{
     })
     mian.classList.remove('mian')
     resume.classList.add('active')
-    body.style.overflowY='scroll';
+    
+    fiximg.forEach((img)=>{
+        img.classList.remove("width")
+    })
+    body.classList.toggle('overflow')
 }
 let portfolio1=()=>{
     function activer() {
@@ -117,7 +123,11 @@ let portfolio1=()=>{
     })
     mian.classList.remove('mian')
     portfiolio.classList.add('active')
-    body.style.overflowY='scroll';
+    
+    fiximg.forEach((img)=>{
+        img.classList.remove("width")
+    })
+    body.classList.toggle('overflow')
 }
 let blog1=()=>{
     function activer() {
@@ -137,7 +147,11 @@ let blog1=()=>{
     })
     mian.classList.remove('mian')
     blog.classList.add('active')
-    body.style.overflowY='scroll';
+    
+    fiximg.forEach((img)=>{
+        img.classList.remove("width")
+    })
+    body.classList.toggle('overflow')
 }
 
 
